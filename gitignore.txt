@@ -1,0 +1,32 @@
+# --- Donnees de survey : ne JAMAIS committer -------------------------------
+# Un .esx contient les plans du site, les SSID, les BSSID et la position
+# physique des points de mesure. Les rapports JSON portent les noms des
+# fichiers d'origine et leurs empreintes.
+*.esx
+*.rapport.json
+*.dryrun.rapport.json
+
+# Fixtures synthetiques : elles se regenerent avec tests/make_fixtures.py
+tests/fixtures/
+
+# --- Python -----------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# --- Editeurs et OS ---------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini
